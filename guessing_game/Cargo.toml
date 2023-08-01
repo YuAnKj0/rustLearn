@@ -1,0 +1,14 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# 在 Cargo.toml 文件中，标题以及之后的内容属同一个片段，直到遇到下一个标题才开始新的片段。
+
+#[dependencies] 片段告诉 Cargo 本项目依赖了哪些外部 crate 及其版本。本例中，我们使用语义化版本 0.8.5 来指定 rand crate
+#0.8.5 事实上是 ^0.8.5 的简写，它表示任何至少是 0.8.5 但小于 0.9.0 的版本。
+
+[dependencies]
+rand = "0.8.5"
